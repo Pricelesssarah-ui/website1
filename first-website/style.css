@@ -1,0 +1,1217 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+
+/*Global styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+  
+}
+
+
+/*Scroll Top*/
+html {
+    scroll-behavior: smooth;
+}
+
+.scrolltop {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: var(--myColor);
+    background: var(--myVar);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+}
+
+
+/*Variables*/
+:root {
+    --myVar: orange;
+    --myColor: white;
+    --myFontTitle: 'Satisfy', cursive;
+    --myFontText: 'Hind Siliguri', sans-serif;
+}
+
+
+/*Contact container*/
+.contact {
+    padding: 10px;
+    margin-left: 50px; 
+    color: var(--myColor);
+}
+
+.phone-num {
+    margin-right: 30px;
+}
+
+.fas, .fa {
+    color: var(--myVar);
+}
+
+
+/*Navigation bar*/
+.icon1 {
+    display: none;
+    cursor: pointer;
+    color: white;
+    margin: 0 0 20px 90%;
+    font-size: 30px;
+    line-height: 5px;
+}
+
+.navbar a{
+    color: var(--myColor);
+    text-decoration: none;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: var(--myFontTitle);
+}
+
+.active {
+    color: var(--myVar) !important;
+    font-weight: bold;
+}
+
+.book-table {
+    color: var(--myColor) !important;
+    background: var(--myVar);
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 5px 20px !important;
+}
+
+.book-table:hover {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--myVar);
+}
+
+
+/*Carousel*/
+.main-carousel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1000;
+}
+
+.carousel-caption {
+    margin-bottom: 12%;
+}
+
+h5 {
+    font-size: 50px;
+    font-family: var(--myFontTitle);
+    margin:  10px 0;
+}
+
+.welcome {
+    color: var(--myVar);
+}
+
+p { 
+    font-family: var(--myFontText);
+    font-weight: normal;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.btn {
+    border: 2px solid var(--myVar);
+    color: var(--myColor);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 3px 30px;
+}
+
+.carousel img {
+    height: 100vh;
+    filter: brightness(40%);
+}
+
+
+/*Picture and text*/
+.row-1 {
+    background-color: rgb(255, 255, 236);
+    padding: 30px 0;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+h3 {
+    font-family: var(--myFontTitle);
+    font-size: 40px;
+}
+
+.boxTitle {
+    font-weight: bold;
+}
+.list {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.list:before {
+    content: '✓';
+    color: var(--myVar);
+}
+
+
+
+/*Our Restaurant*/
+.outer-menu {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Satisfy', cursive;
+}
+
+.menu-color {
+    color: var(--myVar);
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.row-2 { 
+    margin: 3px 100px;
+}
+
+.numb {
+    color: var(--myVar);
+}
+
+.box2 { 
+    height: 250px;
+    padding: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 12px 0 #ccc;
+}
+
+.box2:hover {
+    background: var(--myVar);
+    color: var(--myColor);
+    transition:  .5s ease;
+}
+
+.box2:hover .numb {
+    color: var(--myColor);
+}
+
+h2, h6 {
+    font-weight: bolder;
+}
+
+h2 {
+    color: var(--myVar);
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 30px;
+    font-family: 'Satisfy', cursive;
+}
+
+
+/*Our Menu*/
+.btn-groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.tasty {
+    text-align: center;
+    margin-top: 8%;
+    font-weight: bold;
+}
+
+.btn-groups span {
+    border: 2px solid var(--myVar);
+    margin: 5px 10px;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.active-2 {
+    background-color: var(--myVar);
+    color: var(--myColor);
+}
+
+.container-salad {
+    display: none;
+}
+
+.container-starters {
+    display: none;
+}
+
+.container-specialty {
+    display: none;
+}
+
+
+/*Our Specials*/
+.outer-container {
+    margin: 10px 0;
+}
+
+.txt-special {
+    text-align: center;
+    margin: 15px;
+}
+
+.list-btn {
+    width: 100%;
+    list-style-type: none;
+    font-size: 17px;
+    font-family: var(--myFontText);
+    cursor: pointer;
+}
+
+.list-btn li {
+    padding-bottom: 10px;
+    border-right: 2px solid #ccc;
+}
+
+.activeListBtn {
+    border-right: 2px solid var(--myVar) !important;
+    color: var(--myVar);
+    font-weight: bold;
+}
+
+.txt {
+    text-align: center;
+    margin-left: 0;
+}
+
+.txt2 {
+    display: none;
+}
+
+.txt3 {
+    display: none;
+}
+
+.txt4 {
+    display: none;
+}
+
+.txt5 {
+    display: none;
+}
+
+.box-3 img {
+    width: 80%;
+    height: 30vh;
+}
+
+.image2 {
+    display: none;
+}
+
+.image3 {
+    display: none;
+}
+
+.image4 {
+    display: none;
+}
+
+.image5 {
+    display: none;
+}
+
+
+
+/*Our Events*/
+.container-events:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+    background: url('/images/wedding.jpg');
+    filter: brightness(30%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.carousel-flex {
+    display: flex;
+    padding: 80px;
+}
+
+.carousel-item h1 {
+    text-align: center;
+    color: var(--myColor);
+    padding-top: 70px;
+    margin-top: 20px;
+}
+
+h1 .event {
+    color: var(--myVar);
+}
+
+.event-img img {
+    width:  100%;
+    height: 100%;
+    filter: brightness(100%);
+}
+
+.wedding {
+    height: 65vh;
+}
+
+.event-text {
+    margin-left: 20px;
+    color: var(--myColor);
+    margin-bottom: 10px;
+}
+
+.event-text h6 {
+    text-align: left;
+    color: var(--myVar);
+}
+
+.amount {
+    font-size: 30px;
+    border-bottom: 2px solid var(--myVar);
+    width: 12%;
+}
+
+
+/*Book A Table*/
+#table {
+    margin-top: 10px;
+}
+
+.containerTable {
+    width: 80%;
+    box-shadow: 0 0 12px 0 #ccc;
+    margin: 0 auto;
+}
+
+.tableItem {
+    margin: 50px;
+}
+
+.inputBox {
+    width: 100%;
+}
+
+input {
+   margin: 15px 0;
+    width: 33%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#txtArea {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+#btn {
+   margin: 10px 40%;
+   padding: 10px;
+   border: none;
+   width: 20%;
+   color: var(--myColor);
+   background: var(--myVar);
+   border-radius: 15px;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+
+/*Photo of our Restaurant*/
+.photos {
+    width: 100%;
+    height: 100%;
+}
+
+.photos img {
+    width: 100%;
+    height: 90%;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(0.9);
+
+}
+
+
+/*Photo of our Chef*/
+.OurChefs::before {
+    content: "";
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    background: url('images/hall-guest.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+#chefs {
+    padding-top: 5px;
+    filter: brightness(100%);
+    margin-top: 5%;
+}
+
+.containerChef {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.containerPix {
+    position: relative;
+    width: 100%;
+    margin: 0 0 20% 30px;
+}
+
+.chef1 {
+    width: 100%;
+}
+
+.containerText {
+    position: absolute;
+    width: 90%;
+    margin: -50px 0 80px 20px;
+    background: var(--myColor);
+    padding: 40px;
+    box-shadow: 0 0 12px 0 #ccc;
+}
+
+.containerText p {
+    text-align: center;
+    margin: 10px;
+}
+
+.chefname {
+    border-bottom: 1px solid var(--myVar); 
+    margin: 10px;
+}
+
+.social-links {
+    text-align: center;
+    margin: 5px;
+}
+
+.social {
+    color: black;
+    margin: 5px;
+}
+
+
+/*Contact Us*/
+#contact {
+    margin-top: 100px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 500px;
+    width: 100%;
+}
+
+h6 {
+    text-align: center;
+}
+
+.tastyUs {
+    color: black;
+}
+
+.containerTable {
+    width: 80%;
+    box-shadow: 0 0 12px 0 #ccc;
+    margin: 0 auto;
+}
+
+.tableItem {
+    margin: 50px;
+}
+
+.container-info {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    margin-top: 10px;
+    padding: 15px;  
+}
+
+.info1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inputBox {
+    width: 100%;
+}
+
+#input {
+    margin: 15px 0;
+    width: 48%;
+    border: 1px solid #ccc;
+}
+#subject {
+    width: 100%;
+}
+
+#txtArea {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+#btn {
+   margin: 2rem 25rem;
+   padding: 10px;
+   border: none;
+   width: 20%;
+   color: var(--myColor);
+   background: var(--myVar);
+   border-radius: 15px;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+
+
+/*Footer*/
+.containerFooter {
+    background-color: rgb(44, 43, 43);
+    margin: 15px;
+    padding: 20px;
+}
+
+.txt-specials {
+    color: var(--myColor);
+    text-align: center;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.socials {
+    color: var(--myColor);
+    margin: 10px;
+}
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 700px) {
+
+    .main-container {
+        width: 100%;
+    }
+  
+/*Contact container*/
+
+    .fa, .date-time {
+        display: none;
+    }
+
+
+/*Navigation bar*/
+
+     .icon1 {
+        line-height: 3px;
+        display: block;
+    }
+   
+    .navbar-main {
+        display: none;
+        width: 100vw;
+        height: 65vh;
+        margin-top: 20px;
+        background: var(--myColor);
+        text-align: center;
+    }
+    li .nav-link {
+        color: black;
+
+    }
+    
+    .navbar-brand {
+        margin-left: 5px;
+        font-size: 30px;
+    }
+    
+    .book-table {
+      width: 50%;
+      font-size: 20px;
+      margin-left: 30%;
+    }
+
+
+/*Carousel Section*/
+
+    .carousel-inner img {
+        height: 100vh;
+    }
+
+    .carousel-caption {
+        margin-bottom: 20%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 30px;
+   }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+
+    .btn {
+        margin: 10px;
+        padding: 3px 10px;
+    }
+
+
+/*Picture and text*/
+    .box {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .box-3 img {
+        width: 100%;
+        padding: 10% 10% 10% 0;
+      
+    }
+    .box-size {
+        margin: 10px 5px;
+    }
+    .box-size p {
+        font-size: 15px;
+    }
+
+
+/*Our Restaurant*/
+   .row-2 {
+        width: 100%;
+        margin-left: 0;
+   }
+   .photos img {
+        height: 98%;
+        
+    }
+
+
+/*Our Menu*/
+   .btn-groups {
+        display: flex;
+   }
+   .tasty {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .btn-groups span{
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+/*Our Specials*/
+    p {
+        font-size: 15px;
+     }
+    .txt-special {
+        font-size: 20px;
+     }
+     .overall {
+        width: 100%;
+        margin: 0 auto;
+       margin-left: 25px;
+     }
+    .box-3 img {
+        margin-right: 0;
+        width: 100%;
+        height: 30vh; 
+    }
+
+
+
+/*Events*/
+
+    .container-events:before {
+        width: 100%;
+        height: 8%;
+        margin-top: 10px;
+    }
+    .carousel-flex {
+        display: inline;
+        padding: 80px;
+        width: 100%;
+        margin: 20px; 
+    }
+    .carousel-item h1 {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .event-img img {
+        margin: 0 0 30px 20px;
+        width:  100%;
+        height: 100%;
+    }
+    .wedding {
+        height: 34vh;
+        margin: 0 0 40px 10px;
+    }
+    .event-text {
+        margin: 0 0 30% 20px;
+        width: 100%;
+        font-size: 15px;
+    }
+    .amount {
+        margin-left: 0;
+        width: 15%;
+    }
+
+    
+/*Book A Table*/
+
+    .containerTable {
+        width: 90%;
+    }
+    input {
+        margin: 15px 0;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    #txtArea {
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+    #btn {
+        width: 80%;
+        margin: 10px 45px;
+    }
+
+
+
+/*Photos of Restaurant*/
+
+    .photos {
+        width: 100vw;
+        height: 100%;
+    }
+    .row img {
+        width: 90vw;
+        height: 90%;
+        margin-left: 0;
+    }
+
+
+/*Photo of our Chef*/
+    .OurChefs::before {
+        width: 100%;
+        height: 250vh;
+        margin: 10% 0 20px 0;
+       
+    }
+    #chefs {
+        padding: 10px;
+    }
+    .containerChef {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .containerPix {
+        width: 100%;
+        margin: 0 0 40% 0;
+    }
+    .info {
+        margin-bottom: 10%;
+    }
+    .social-links {
+        display: inline-flex;
+    }
+
+
+/*Contact Us*/
+
+    .container-info {
+        display: block;
+        margin-top: 0;
+    }
+    #input {
+        padding: 10px;
+        width: 100%;
+        margin: 15px 0;
+    }
+    #btn {
+        margin-left: 20px;
+    }
+    .fas {
+        display: none;
+    }
+
+
+/*Footer*/
+    .containerFooter {
+        background-color: rgb(44, 43, 43);
+        width: 100%;
+        margin: 15px;
+        padding: 20px;
+    }
+    .txt-specials {
+        color: var(--myColor);
+        text-align: center;
+        margin: 20px;
+        font-size: 15px;
+    }
+    .socials {
+        color: var(--myColor);
+        margin: 10px;
+    }
+}
+
+
+
+
+@media (min-width: 700px) and (max-width: 1180px) {
+
+    body {
+        width: 100%;
+    }
+
+/*Navigation bar*/
+    .icon1 {
+        line-height: 3px;
+        display: block;
+    }
+    .navbar-main {
+        display: none;
+        width: 100vw;
+        height: 60vh;
+        background: var(--myColor);
+        text-align: center;
+    }
+    .navbar-main, .nav-link {
+        margin-top: 20px;
+        font: 20px;
+    }
+    li .nav-link {
+        color: black;
+    }
+    .navbar-brand {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .book-table {
+      width: 40%;
+      font-size: 20px;
+      margin-left: 30%;
+    }
+
+
+
+/*Carousel*/
+    .main-carousel {
+        width: 100%;
+    }
+    .carousel-caption {
+        margin-bottom: 60%;
+    }
+
+
+/*Picture and Text*/
+    .row-1 {
+        padding: 20px 0;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+    }
+    .box img {
+        width: 100%;
+        height: 100%;
+    }
+    .box-size {
+        width: 100%;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    
+
+
+/*Our Restaurant*/
+    .our-restaurant {
+        width: 100%;
+    }
+    .outer-menu {
+        width: 100%;
+        margin: 30px;
+    }
+    .outer-menu h4 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .row-2 { 
+        display: block;
+        margin: 3px 10px;
+        width: 100%;
+    }
+    .numb {
+        color: var(--myVar);
+        font-size: 50px;
+    }
+    .box2 {
+        margin: 0 0 10px 0;
+    }
+    .col2 {
+        width: 100%;
+    }
+    h6 {
+        text-align: left;
+        font-size: 40px;
+    }
+
+
+
+/*Our Menu*/
+    .tasty {
+        margin-top: 80px;
+    }
+    .btn-groups {
+        text-align: center;
+    }
+    .btn-groups span {
+        margin: 5px 10px;
+        padding: 5px;
+        width: 15%;
+    }
+
+
+/*Our Specials*/
+    .listrow {
+        width: 100%;
+    }
+    .txt {
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .box-3 img {
+        margin: 20px 10px;
+        height: 50vh;
+        width: 100%;
+    }
+    .col-md-4 {
+        width: 100%;
+
+    }
+
+
+
+/*Our Events*/
+
+    .container-events:before {
+        width: 100%;
+        height: 100vh; 
+        margin-bottom: 0;
+    }
+    .carousel-flex {
+        display: block;
+    }
+    .topspace {
+        margin-top: 20px;
+    }
+    .active h1 {
+        font-size: 50px;
+    }
+    .event-img {
+        width:  100%;
+        height: 50%;
+    }
+    .wedding {
+        height: 38vh;
+        width: 100%;
+    }
+    .event-text {
+        margin: 0 0 5% 10%;
+        font-size: 20px;
+        width: 100%;
+    }
+    .event-text p {
+        font-size: 20px;
+
+    }
+
+
+/*Book A Table*/
+    #table {
+        margin-top: 5%;
+        width: 100%;
+    }
+    .containerTable {
+        width: 90%;
+    }
+    .tableItem {
+        width: 100%;
+        margin: 50px;
+    }
+    .tableText {
+        margin-top: 10px;
+    }
+    .inputBox {
+        width: 100%;
+    }
+    input {
+        margin: 15px 0 10px 0;
+        width: 40%;
+        padding: 10px;
+    }
+    #txtArea {
+        max-width: 80%;
+    }
+    #btn {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        width: 20%;
+    }
+
+
+
+/*Photo of our Chef*/
+    .OurChefs::before {
+        height: 60vh;
+    }
+    .chefs {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .containerText {
+        position: absolute;
+        width: 90%;
+        margin: -50px 0 20% 13px;
+        padding: 20px;
+    }
+
+   
+    
+    
+/*Contact Us*/
+    #contact {
+        margin-top: 30%;
+    }
+    .tableItem {
+        margin: 50px;
+        width: 100%;
+    }
+    
+    .container-info {
+        display: block;
+    }
+    
+    .info {
+        margin-top: 10px;
+        padding: 15px; 
+        width: 80%; 
+    }
+    
+    .info1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .inputBox {
+        width: 100%;
+    }
+    
+    #input {
+        margin: 15px 0;
+        width: 40%;
+        border: 1px solid #ccc;
+    }
+    #subject {
+        width: 80%;
+    }
+    
+    #txtArea {
+        width: 100%;
+        border: 1px solid #ccc;
+    }
+    
+    #btn {
+       margin-left: 30%;
+       padding: 10px;
+       width: 20%;
+       border-radius: 15px;
+     
+    }
+    
+
+/*Footer*/
+    .txt-specials {
+        color: var(--myColor);
+        text-align: center;
+        margin: 20px;
+        font-size: 15px;
+    }
+    .socials {
+        color: var(--myColor);
+        margin: 10px;
+    }
+    .textPix h6 {
+        text-align: center;
+    }
+
+
+}
